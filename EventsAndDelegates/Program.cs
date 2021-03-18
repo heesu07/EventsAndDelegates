@@ -13,6 +13,9 @@
             var messageService = new MessageService();
             videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 
+            var printService = new PrintService();
+            videoEncoder.VideoEncoded += printService.OnVideoEncoded;
+
             videoEncoder.Encode(video);
         }
     }

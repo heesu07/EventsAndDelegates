@@ -2,7 +2,7 @@
 
 namespace EventsAndDelegates
 {
-    public class MessageService
+  public class MessageService
     {
         public void OnVideoEncoded(object source, VideoEventArgs args)
         {
